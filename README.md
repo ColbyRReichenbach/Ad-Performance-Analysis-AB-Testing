@@ -51,6 +51,6 @@ This project analyzes ad campaign data from XYZ Company to identify key factors 
 ## Contact
 
 - **Email:** [your.email@example.com](mailto:colbyrreichenbach@gmail.com)  
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/colby-reichenbach)  
+- **LinkedIn:** [Profile](https://www.linkedin.com/in/colby-reichenbach)  
 
-Feel free to reach out if you have any questions or would like to collaborate! 🚀
+Feel free to reach out for any inquires!
