@@ -1,6 +1,3 @@
-# Writing the markdown report structure with the updated focus
-
-report_md = """
 # **Marketing Campaign Performance Report**
 
 ## **Table of Contents**
