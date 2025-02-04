@@ -1,6 +1,6 @@
-# Enhanced Report with Table of Contents, Detailed Observations, and Strategic Recommendations
+# Correct the Markdown anchors for internal linking
 
-enhanced_report_content = """
+corrected_report_content = """
 # 📊 **Marketing Campaign Performance Analysis Report**
 
 ---
@@ -25,13 +25,13 @@ enhanced_report_content = """
 
 ---
 
-## ✅ **Executive Summary**
+## **Executive Summary**
 
 This report presents an in-depth analysis of the company's marketing campaigns, uncovering critical insights into **conversion performance, ad creative effectiveness, and demographic impacts**. Our findings guide actionable strategies to optimize campaign efficiency, reduce costs, and enhance ROI.
 
 ---
 
-## 🚀 **Introduction**
+## **Introduction**
 
 The goal of this analysis is to evaluate the performance of marketing campaigns to identify high-impact strategies. We focus on:
 
@@ -42,7 +42,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 📊 **Methodology**
+## **Methodology**
 
 1. **Data Cleaning:** Removed anomalies (e.g., conversions without clicks) for accuracy.
 2. **Exploratory Data Analysis (EDA):** Identified trends, correlations, and outliers.
@@ -51,14 +51,14 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 📈 **Exploratory Data Analysis (EDA)**
+## **Exploratory Data Analysis (EDA)**
 
-### 🔍 **Data Overview**
+### **Data Overview**
 
 - **Total Records:** 1,143 ad campaigns analyzed  
 - **Key Variables:** Campaign IDs, Age, Gender, Interests, Impressions, Clicks, Spend, Conversions  
 
-### 📊 **Descriptive Statistics**
+### **Descriptive Statistics**
 
 | Metric                | Mean       | Median     | Min     | Max        | Std Dev    |
 |-----------------------|------------|------------|---------|------------|------------|
@@ -68,14 +68,14 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 | Total Conversions     | 2.86       | 1          | 0       | 60         | 4.48       |
 | Approved Conversions  | 1.85       | 1          | 0       | 21         | 2.06       |
 
-### 📈 **Correlation Analysis**
+### **Correlation Analysis**
 
 - **Clicks and Spend:** Strong positive correlation (r ≈ 0.85), meaning higher spend drives more clicks.
 - **Impressions and Conversions:** Weak correlation (r ≈ 0.3), suggesting impressions alone aren’t enough for conversions.
 
 ![Correlation Heatmap](correlation_heatmap.png)
 
-### 🚀 **Funnel Analysis**
+### **Funnel Analysis**
 
 **Impressions → Clicks → Conversions → Approved Conversions**
 
@@ -85,7 +85,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 🔑 **Key Observations**
+## **Key Observations**
 
 1. **High CPA in Campaign 1178:**  
    - **CPA:** $64.05 (6.8x higher than Campaign 916's $9.36)  
@@ -103,9 +103,9 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 📊 **A/B Testing Results**
+## **A/B Testing Results**
 
-### ✅ **Campaign Performance**
+### **Campaign Performance**
 
 | **Comparison**          | **Conversion Rate (p-value)** | **CPA per Impression (p-value)** | **Insight**                         |
 |-------------------------|-------------------------------|----------------------------------|------------------------------------|
@@ -115,7 +115,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 🔬 **Chi-Square Analysis**
+## **Chi-Square Analysis**
 
 | **Demographic Factor** | **Chi-Square Statistic** | **P-Value** | **Result**                     |
 |------------------------|--------------------------|-------------|--------------------------------|
@@ -125,7 +125,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 🎯 **Strategic Recommendations**
+## **Strategic Recommendations**
 
 1. **Reallocate Budget:**  
    - **Why Move from Campaign 1178?**  
@@ -147,7 +147,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 🔍 **Future Testing Opportunities**
+## **Future Testing Opportunities**
 
 1. **Multivariate Testing:**  
    - Test combinations of headlines, images, CTAs to find the best-performing mix.
@@ -163,23 +163,14 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 ---
 
-## 🚀 **Conclusion**
+## **Conclusion**
 
 The analysis reveals that **ad creatives and campaign strategies** drive performance more than demographics. **Campaign 916** emerges as a top performer, while **Campaign 1178** needs targeted optimizations. Moving forward, a hybrid approach combining effective elements from different campaigns will maximize ROI.
 
 ---
 
-## 📂 **Appendix**
+## **Appendix**
 
 - Detailed statistical outputs  
 - Raw data observations  
 - Additional visualizations  
-
-"""
-
-# Save the enhanced report as a Markdown file
-enhanced_report_path = '/mnt/data/Marketing_Campaign_Performance_Enhanced_Report.md'
-with open(enhanced_report_path, 'w') as file:
-    file.write(enhanced_report_content)
-
-enhanced_report_path
