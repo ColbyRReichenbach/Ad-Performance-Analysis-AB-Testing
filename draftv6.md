@@ -63,10 +63,6 @@ Strategic recommendations include budget reallocation towards high-performing ca
 | CPA ($)               | 20.71      | 0          | 0       | 352.45     | 43.76      |
 | Conversion Rate (%)   | 8.93       | 0          | 0       | 200        | 22.74      |
 
-**Visuals:**
-- ![Distribution of CPA](/figures/Distribution_of_CPA.png)
-- ![Distribution of Conversion Rate](/figures/Distribution_of_Conversion_Rate.png)
-
 ---
 
 ### **Campaign Performance Analysis**
