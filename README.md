@@ -17,9 +17,7 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 ├── notebooks/
 │   ├── Final_Notebook.ipynb        # Full analysis with code
 │   └── Version_History.ipynb       # Older versions for reference
-├── figures/
-│   ├── marketing_funnel.png        # Visualizations used in reports
-│   └── campaign_performance.png    # Key campaign insights
+├── figures/   # figures derived from notebooks - for use in reports
 ├── data/
 │   └── conversion_data.csv         # Raw dataset
 ├── reports/
