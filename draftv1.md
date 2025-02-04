@@ -86,7 +86,7 @@ Shift focus from demographic targeting to **behavioral targeting** for better pe
 ## 📚 **Further Reading**
 
 For detailed analysis, full statistical tests, and extended insights, refer to the complete report:  
-**[📥 Full Report - Marketing Campaign Analysis (Jupyter Notebook)](./Final_Notebook.ipynb)**
+**[📥 Full Report - Marketing Campaign Analysis (Jupyter Notebook)](/notebooks/Final_Notebook.ipynb)**
 
 ---
 
