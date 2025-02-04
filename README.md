@@ -4,7 +4,7 @@ This repository contains a comprehensive data analysis project focused on A/B te
 
 ## Project Overview
 
-This project analyzes ad campaign data from XYZ Company to identify key factors driving ad performance. It includes:
+This project analyzes ad campaign data from a ficticious Company to identify key factors driving ad performance. It includes:
 - **Exploratory Data Analysis (EDA):** Descriptive statistics, outlier detection, and performance metrics.
 - **A/B Testing:** Campaign effectiveness and ad creative analysis with statistical validation.
 - **Chi-Square Tests:** Evaluating demographic and interest-based segmentation.
