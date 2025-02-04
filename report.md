@@ -73,7 +73,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 - **Clicks and Spend:** Strong positive correlation (r ≈ 0.85), meaning higher spend drives more clicks.
 - **Impressions and Conversions:** Weak correlation (r ≈ 0.3), suggesting impressions alone aren’t enough for conversions.
 
-![Correlation Heatmap](correlation_heatmap.png)
+![Correlation Heatmap](/figures/correlation_matrix_of_metrics.png)
 
 ### **Funnel Analysis**
 
@@ -81,7 +81,7 @@ The goal of this analysis is to evaluate the performance of marketing campaigns 
 
 - **Conversion Drop-Off:** 73% drop from clicks to approved conversions, highlighting post-click optimization opportunities.
 
-![Conversion Funnel](funnel_chart.png)
+![Conversion Funnel](/figures/marketing_conversion_funnel_log.png)
 
 ---
 
