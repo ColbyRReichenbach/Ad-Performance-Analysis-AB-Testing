@@ -20,10 +20,11 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 ├── data/
 │   └── conversion_data.csv         # Raw dataset
 │   └── df_cleaned.csv              # Cleaned dataset
-├── reports/
-│   ├── Summary_Report.pdf          # Executive summary with key insights
-│   └── Full_Report.pdf             # Detailed report with analysis
-└── README.md                       # Project documentation
+│       ├── from_notebook/          # Saved tables from analysis/tests
+├── README.md                       # Project documentation
+├── Summary_Report.md               # Executive summary with key insights
+├── report.md                       # Detailed report with analysis
+└── requirements.txt                # Required packages to run notebook
 ```
 
 ## Key Findings
@@ -42,7 +43,7 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 
 ## Tools & Technologies
 
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn, SciPy
+- **Python:** For data visualization
 - **Jupyter Notebooks:** For data exploration and analysis
 - **Statistical Tests:** T-tests, Chi-Square tests for validation
 
