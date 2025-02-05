@@ -1,6 +1,5 @@
 # **Marketing Campaign Performance Analysis Report**
 **Colby Reichenbach**
----
 
 ## **Table of Contents**
 
