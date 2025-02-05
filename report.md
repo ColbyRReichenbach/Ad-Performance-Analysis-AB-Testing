@@ -134,6 +134,91 @@ This section lays the groundwork for hypothesis testing and strategic insights.
 ---
 
 ### **Funnel Analysis**
+**Overview**
+This section provides a comprehensive evaluation of the funnel performance, focusing on:
+- **Impressions:** The total number of times ads were displayed.  
+- **Clicks:** User engagement with ads, indicating interest.  
+- **Total Conversions:** Actions taken after clicking (e.g., form submissions, inquiries).  
+- **Approved Conversions:** Final qualified leads or successful customer acquisitions.
+
+**Note**
+The funnel plots use a logarithmic (log10) scale to represent the data. This transformation was applied because of the extreme differences in counts between stages (e.g., from millions of impressions to thousands of clicks).
+**Why Use a Log Scale?**  
+- **Improves Readability:** Without log scaling, the vast number of impressions would dwarf the clicks and conversions, making them nearly invisible.  
+- **Reveals Trends Clearly:** Log scaling helps visualize drop-off patterns across all funnel stages more effectively.
+
+--- 
+###**Combined Funnel between all Campaigns**
+![Overall Funnel](/figures/combined_marketing_funnel.png)
+
+**Impressions → Clicks**
+- **Drop-off Rate:** **99.98%** (Conversion Rate: ~0.018%)
+- **Interpretation:**  
+  Only ~1.8 out of every 10,000 users who view the ad click on it, signaling poor engagement.
+- **Possible Issues:**  
+  - Irrelevant ad targeting  
+  - Unappealing creatives (weak visuals or CTAs)  
+  - Ad fatigue (overexposure reducing impact)
+
+### **Clicks → Total Conversions**
+
+- **Drop-off Rate:** **92%** (Conversion Rate: ~8%)
+- **Interpretation:**  
+  Only 8 out of 100 clickers express interest or complete an inquiry—standard but improvable.
+- **Possible Issues:**  
+  - Poor landing page UX (slow load times, complex layouts)  
+  - Mismatch between ad promises and landing page content  
+  - Friction in forms (too many fields)
+
+### **Total Conversions → Approved Conversions**
+
+- **Drop-off Rate:** **67.14%** (Conversion Rate: ~32.86%)
+- **Interpretation:**  
+  Only 1 in 3 leads get approved—indicating potential lead quality issues or inefficiencies in the sales process.
+- **Possible Issues:**  
+  - Misleading ads attracting unqualified leads  
+  - Poor follow-up process post-inquiry
+
+### **Overall Funnel Efficiency**
+
+- **Overall Conversion Rate:** **~0.00047%** (1 approved conversion per 213,000 impressions)
+- **Insight:**  
+  Highlights systemic inefficiencies across targeting, ad engagement, and post-click conversion processes.
+- **Action Needed:**  
+  - **Comprehensive audit** across all funnel stages  
+  - Address drop-offs **systematically**, starting from ad targeting down to sales closure
+
+---
+
+###**Campaign Funnel Comparison**
+
+![Comaprison Funnel](/figures/funnel_comparison.png)
+**Campaign 916 (Top Performer)**
+
+- **Conversion Rate:** **0.00357%** (*8x higher than Campaign 1178*)  
+- **Post-Click Strength:** 34.5% of clicks convert into leads, 41% of leads are approved  
+- **Key Takeaway:**  
+  Cost-efficient with strong lead quality despite fewer impressions
+- **Strategic Move:**  
+  - **Scale budget** and A/B test creatives for broader reach without sacrificing quality
+
+### **Campaign 936 (Moderate Performer)**
+
+- **CTR:** **0.0254%** (*comparable to 916*)  
+- **Drop-Off Issue:** Post-click conversions at 17.9%—significantly lower than 916’s 34.5%  
+- **Approval Rate:** 33.1%  
+- **Strategic Move:**  
+  - **Focus on optimizing post-click stages** (landing pages, CTAs) to improve conversion efficiency
+
+### **Campaign 1178 (Underperformer)**
+
+- **Conversion Rate:** **0.00043%** (*lowest*)  
+- **Key Bottleneck:** Low click-to-conversion rate (7.37%)  
+- **High Volume, Low Value:** Massive impressions (~204 million) but minimal conversion  
+- **Strategic Move:**  
+  - **Conduct an in-depth audit** of ad creatives and landing pages  
+  - **Narrow targeting** to high-converting audiences  
+  - **Reduce budget** until optimizations are proven effective
 
 ---
 
