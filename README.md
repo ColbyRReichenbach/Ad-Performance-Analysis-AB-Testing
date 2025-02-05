@@ -15,8 +15,7 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 
 ```bash
 ├── notebooks/
-│   ├── Final_Notebook.ipynb        # Full analysis with code
-│   └── Version_History.ipynb       # Older versions for reference
+│   └── Final_Notebook.ipynb        # Full analysis with code
 ├── figures/                        # figures derived from notebooks - for use in reports
 ├── data/
 │   └── conversion_data.csv         # Raw dataset
@@ -49,7 +48,7 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 
 ## Contact
 
-- **Email:** [your.email@example.com](mailto:colbyrreichenbach@gmail.com)  
+- **Email:** [colbyrreichenbach@gmail.com](mailto:colbyrreichenbach@gmail.com)  
 - **LinkedIn:** [Profile](https://www.linkedin.com/in/colby-reichenbach)  
 
 Feel free to reach out for any inquires!
