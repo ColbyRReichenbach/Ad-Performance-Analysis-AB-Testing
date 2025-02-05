@@ -1,1 +1,10 @@
-
+kaleido
+matplotlib
+numpy
+pandas
+plotly.graph_objects
+plotly.subplots
+scipy
+seaborn
+statsmodels.stats.proportion
+warnings
