@@ -220,11 +220,11 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 
 ---
 
-## Campaign Performance Analysis**
+## **Campaign Performance Analysis**
 **Overview**
 Investigate differences in Campaign performance through key performance indicators.
 
-![Campagin Performance by Key Metrics](/figures/.png)
+![Campagin Performance by Key Metrics](/figures/campaign_performance_metrics.png)
 (need to save in notebook)
 
 **What we see:**
