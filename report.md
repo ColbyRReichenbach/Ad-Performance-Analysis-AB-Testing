@@ -10,15 +10,17 @@
 4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
    - [Data Overview](#data-overview)
    - [Descriptive Statistics](#descriptive-statistics)
-   - [Correlation Analysis](#correlation-analysis)
    - [Funnel Analysis](#funnel-analysis)
-   - [Key Observations](#key-observations)
+   - [Segment Analysis](#segment-analysis)
+   - [Campaign Performance Analysis](#campaign-performance-analysis)
 5. [A/B Testing Results](#ab-testing-results)
-6. [Chi-Square Analysis](#chi-square-analysis)
-7. [Strategic Recommendations](#strategic-recommendations)
-8. [Future Testing Opportunities](#future-testing-opportunities)
-9. [Conclusion](#conclusion)
-10. [Appendix](#appendix)
+   - [Campaign Performance Efficiency (Cross-Campaign Analysis)](#Campaign-Performance-Efficiency-(Cross-Campaign-Analysis))
+   - [Ad Creative Effectiveness (CTR-Focused Test)](#Ad-Creative-Effectiveness-(CTR-Focused-Test))
+7. [Chi-Square Analysis](#chi-square-analysis)
+8. [Strategic Recommendations](#strategic-recommendations)
+9. [Future Testing Opportunities](#future-testing-opportunities)
+10. [Conclusion](#conclusion)
+11. [Appendix](#appendix)
 
 ---
 
@@ -112,7 +114,7 @@ This section lays the groundwork for hypothesis testing and strategic insights.
 ---
 
 ## **Descriptive Statistics**
-###**Distribution of key Metrics**
+### **Distribution of key Metrics**
 (insert table)
 
 ### **Correlation Analysis**
@@ -126,7 +128,7 @@ This section lays the groundwork for hypothesis testing and strategic insights.
 - **CPA & Clicks/Impressions (~0.57 - 0.62):**  
   - CPA increases with more clicks and impressions, which may seem counterintuitive. This could indicate campaigns generating lots of engagement but struggling with *post-click conversions*, potentially due to *poor landing page experiences* or *irrelevant audiences*.  
 
-###**Outliers**
+### **Outliers**
 - 124 Outliers were identified, they shared the common pattern of low impressions with disproportionately high CTR and CPA values. This can possibly skew metrics, and should be looked at further.
 
 ---
@@ -166,7 +168,7 @@ Convresion rate was analyzed per ad, and interest category to identify our most 
 **Overview**
 Breaking down analysis by age, and gender allowing us to identify how demographics play a role.
 
-###**Conversion Rate by Age group**
+### **Conversion Rate by Age group**
 (insert graph)
 
 **What we see:**
@@ -186,7 +188,7 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 
 ---
 
-###**Conversion Rate by Gender**
+### **Conversion Rate by Gender**
 ![Bar graph of conversion rate by gender](/figures/conversion_rate_by_gender.png)
 
 
@@ -204,7 +206,7 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 
 ---
 
-###**Gender and Age Interaction**
+### **Gender and Age Interaction**
 ![Gender and age interaction Heatmap](/figures/conversion_rate_heatmap.png)
 
 
@@ -269,7 +271,7 @@ Compare the cost efficiency and conversion performance of different campaigns us
 | **916 vs 936**          | 0.4309 (Not Significant)      | 0.3669 (Not Significant)         | No significant difference          |
 | **936 vs 1178**         | **2.34 × 10⁻¹²** (Significant) | 0.09837 (Marginal)              | 936 significantly outperforms 1178 |
 
-###**What does this tell us?**
+### **What does this tell us?**
 **Campaign 916 vs. Campaign 1178**
 
 **Conversion Rate (CR):**
@@ -291,7 +293,7 @@ Compare the cost efficiency and conversion performance of different campaigns us
 **CPA per Impression:**
 - Interpretation: While not below the typical 0.05 threshold, this marginally non-significant result suggests there may be some difference worth further exploration.
 
-###**What can we do?**
+### **What can we do?**
 - Investigate into why Campaign 1178 is failing to convert, potentially shift focus from this campagin.
 - Increase budget allocation to Campaign 916.
 - Improve Campaign 936 through more A/B testing.
@@ -338,7 +340,7 @@ To determine which ad creatives (**ad_id**) drive **higher Click-Through Rates (
 | Z-Statistic         |    -8.2104     |               |
 | P-Value             |     2.2053e-16 |               |
 
-###**What does this tell us?**
+### **What does this tell us?**
 **1. Click-Through Rate (CTR) comparison:**
 - Surprisingly, **Low CPA Ads have a higher CTR** than High CPA Ads.  
 - This suggests that ads with **lower acquisition costs** are actually **more effective in attracting clicks**, contradicting the common assumption that higher spend correlates with better click performance.
@@ -351,7 +353,7 @@ To determine which ad creatives (**ad_id**) drive **higher Click-Through Rates (
 - The **p-value is far below the 0.05 threshold**, indicating a **highly significant difference** in CTR between High and Low CPA Ads.  
 - The **negative Z-statistic** suggests that **High CPA Ads have significantly lower CTRs** compared to Low CPA Ads.
 
-###**What can we do?**
+### **What can we do?**
 **1. Clicks ≠ Conversions:**  
    - **Low CPA Ads** generate **more clicks**, but they **fail to convert**.  
    - **High CPA Ads**, despite fewer clicks, result in **higher conversion rates**.  
