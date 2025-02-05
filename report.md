@@ -531,21 +531,21 @@ Evaluate if demographic features (gender, age, interests) are associated with co
   - Test ads with identical content but varying one creative element at a time.
   - Measure changes in CTR and conversion rates.
 - **Expected Insights:** Determine which creative elements resonate most with the target audience.
----
+
 ### 2. **Chi-Square Tests for Behavioral Segmentation:**
 - **Objective:** Evaluate if user behaviors (click frequency, session duration) are significantly associated with conversion rates.
 - **Outline:**
   - Segment users by behavioral patterns.
   - Apply chi-square tests to detect significant relationships.
 - **Expected Insights:** Identify key behavioral drivers of conversions to refine targeting strategies.
----
+
 ### 3. **Time-Based Performance Analysis:**
 - **Objective:** Assess if ad performance varies significantly across different times of day or days of the week.
 - **Outline:**
   - Conduct A/B tests for ads shown at different time slots.
   - Compare engagement and conversion metrics.
 - **Expected Insights:** Optimize ad scheduling to maximize engagement and conversions.
----
+
 ### 4. **Multi-Variant Testing:**
 - **Objective:** Test multiple variables simultaneously to understand interaction effects between targeting, creatives, and placement.
 - **Outline:**
