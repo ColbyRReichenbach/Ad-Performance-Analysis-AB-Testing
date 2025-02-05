@@ -331,7 +331,12 @@ To determine which ad creatives (**ad_id**) drive **higher Click-Through Rates (
    - **Proportion Z-Test:** Used to compare **CTR** across High CPA and Low CPA ad groups.  
    - Additionally, **Conversion Rates** were analyzed to assess the **quality of clicks**.
   
-(insert table)
+| Metric              |   High CPA Ads |   Low CPA Ads |
+|:--------------------|---------------:|--------------:|
+| CTR (%)             |     1.82       |          2.01 |
+| Conversion Rate (%) |     2.12       |          0    |
+| Z-Statistic         |    -8.2104     |               |
+| P-Value             |     2.2053e-16 |               |
 
 ###**What does this tell us?**
 **1. Click-Through Rate (CTR) comparison:**
@@ -422,11 +427,11 @@ Evaluate if demographic features (gender, age, interests) are associated with co
    - Shift focus to **user behaviors, interests, and retargeting** strategies.
   
 5. **Landing Page Optimization:**
-- Improve Post-Click Experience through testing different landing page layouts, CTAs, and content to reduce the click-to-conversion gap.
-- Ensure fast load times and mobile-friendly designs to prevent drop-offs.
+   - Improve Post-Click Experience through testing different landing page layouts, CTAs, and content to reduce the click-to-conversion gap.
+   - Ensure fast load times and mobile-friendly designs to prevent drop-offs.
 
 6 . **Advanced Analytical Approaches:**
-- Develop predictive models to forecast conversion likelihood based on ad characteristics and audience behaviors.
+   - Develop predictive models to forecast conversion likelihood based on ad characteristics and audience behaviors.
 
 ---
 
