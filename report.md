@@ -27,6 +27,7 @@
 This report provides a comprehensive analysis of the company's marketing campaign performance, focusing on key metrics such as Click-Through Rate (CTR), Conversion Rate, Cost Per Acquisition (CPA), and overall ad effectiveness. Key insights from A/B testing, Chi-Square analysis, and funnel analysis have been synthesized to deliver actionable recommendations aimed at optimizing marketing strategies and enhancing ROI.
 
 ---
+
 ### **Key Findings:**
 
 - Campaign 916 outperforms others with a conversion rate of 14.16% and the lowest CPA of $9.36, indicating efficient budget utilization and strong audience targeting.
@@ -47,18 +48,26 @@ This report provides a comprehensive analysis of the company's marketing campaig
 
 - Enhance landing pages to bridge the click-to-conversion gap, improving overall efficiency.
 
+---
+
 ## **Introduction**
 
-This report evaluates the performance of digital marketing campaigns using a data-driven approach. The objective is to identify strengths, weaknesses, and opportunities within current marketing efforts and provide actionable recommendations.
+The data used in this report comes from a marketing campaign dataset tracking impressions, clicks, conversions, and related cost metrics across multiple campaigns and demographic segments. The core objectives of this analysis are to:
+
+- Assess campaign effectiveness based on key performance indicators (KPIs).
+- Identify the impact of ad creatives on user engagement.
+- Determine the significance of demographic factors in conversion rates.
+- Provide data-driven recommendations for marketing optimization.
 
 ---
 
 ## **Methodology**
 
 1. **Data Cleaning:** Removed anomalies (e.g., conversions without clicks) for accuracy.
-2. **Exploratory Data Analysis (EDA):** Identified trends, correlations, and outliers.
-3. **A/B Testing:** Compared campaigns and ad performance based on CTR, CPA, and conversion rates.
-4. **Chi-Square Tests:** Assessed demographic influences on conversion rates.
+2. **Feature Engineering:** Created key KPI's to access campaign effectiveness.
+3. **Exploratory Data Analysis (EDA):** Identified trends, correlations, and outliers.
+4. **A/B Testing:** Compared campaigns and ad performance based on CTR, CPA, and conversion rates.
+5. **Chi-Square Tests:** Assessed demographic influences on conversion rates.
 
 ---
 
@@ -71,68 +80,324 @@ This report evaluates the performance of digital marketing campaigns using a dat
 
 ### **Descriptive Statistics**
 
-| Metric                | Mean       | Median     | Min     | Max        | Std Dev    |
-|-----------------------|------------|------------|---------|------------|------------|
-| Impressions           | 186,732    | 51,509     | 87      | 3,052,003  | 312,762    |
-| Clicks                | 41         | 16         | 1       | 421        | 60         |
-| Spent ($)             | 51.36      | 12.37      | 0       | 639.95     | 86.91      |
-| Total Conversions     | 2.86       | 1          | 0       | 60         | 4.48       |
-| Approved Conversions  | 1.85       | 1          | 0       | 21         | 2.06       |
+| Metric                | Mean       | Min     | Max        | Std Dev    |
+|-----------------------|------------|---------|------------|------------|
+| Impressions           | 227020     | 512     | 3052003    | 331904     |
+| Clicks                | 40.87      | 1       | 421        | 60.44      |
+| Spent ($)             | 62.58      | 0       | 639.95     | 92.20      |
+| Total Conversions     | 3.25       | 0       | 60         | 4.46       |
+| Approved Conversions  | 1.95       | 0       | 21         | 2.17       |
+
+
+## **Feature Engineering**
+**Created the following KPIs:**
+- **Click-Through Rate (CTR):** Measures how effectively an ad generates clicks. A higher CTR indicates that the ad is engaging and relevant to the target audience.
+- **Cost Per Click (CPC):** Represents the average cost incurred for each click on an ad. This helps assess the efficiency of ad spending in driving traffic.
+- **Cost Per Acquisition (CPA):** Indicates the average cost to acquire a new customer or lead. It’s a key measure of how cost-effective the campaign is in converting clicks into actual business outcomes.
+- **Conversion Rate (CR):** Shows the percentage of users who complete a desired action (such as filling out a form or making a purchase) after clicking on an ad. It reflects the effectiveness of both the ad and the landing page in driving conversions.
+- **Cost Per Thousand Impressions (CPM):** Calculates the cost to reach 1,000 potential customers. This metric is valuable for understanding the cost-efficiency of campaigns focused on brand awareness.
+
+---
+## **Exploratory Data Analysis (EDA)
+
+EDA helps us understand the structure of the data, identify patterns, and detect anomalies. We analyze key metrics such as:
+- **Impressions, Clicks, Spend, Conversions**
+- **Descriptive Statistics** for campaign performance
+- **Correlation Analysis** to find relationships between variables
+- **Segment Analysis**
+- **Funnel Analysis** to visualize the conversion process
+
+This section lays the groundwork for hypothesis testing and strategic insights.
+
+---
+
+## **Descriptive Statistics**
+###**Distribution of key Metrics**
+(insert table)
 
 ### **Correlation Analysis**
 
-- **Clicks and Spend:** Strong positive correlation (r ≈ 0.85), meaning higher spend drives more clicks.
-- **Impressions and Conversions:** Weak correlation (r ≈ 0.3), suggesting impressions alone aren’t enough for conversions.
-
 ![Correlation Heatmap](/figures/correlation_matrix_of_metrics.png)
+
+- **Clicks & Spend (0.99):**  
+  - Spending more directly correlates with generating more clicks. This indicates that *budget allocation* heavily influences click volume. - **Impressions and Conversions:** Weak correlation (r ≈ 0.3), suggesting impressions alone aren’t enough for conversions.
+- **CTR & Impressions (-0.15):**  
+  - As impressions increase, CTR slightly decreases. This could be due to *ad fatigue* or *diminishing returns* in broad audience targeting, where ads reach less engaged users over time.
+- **CPA & Clicks/Impressions (~0.57 - 0.62):**  
+  - CPA increases with more clicks and impressions, which may seem counterintuitive. This could indicate campaigns generating lots of engagement but struggling with *post-click conversions*, potentially due to *poor landing page experiences* or *irrelevant audiences*.  
+
+###**Outliers**
+- 124 Outliers were identified, they shared the common pattern of low impressions with disproportionately high CTR and CPA values. This can possibly skew metrics, and should be looked at further.
+
+---
 
 ### **Funnel Analysis**
 
-**Impressions → Clicks → Conversions → Approved Conversions**
+---
 
-- **Conversion Drop-Off:** 73% drop from clicks to approved conversions, highlighting post-click optimization opportunities.
+### **Conversion Rate Analysis**
+**Overview**
+Convresion rate was analyzed per ad, and interest category to identify our most efficient areas.
 
-![Conversion Funnel](/figures/marketing_conversion_funnel_log.png)
+### **Conversion Rate per Ad**
+**Top 10 Performing Ads Insights**
+- **Ad IDs:** 0, 46, 183, 179, 176, 164, 162, 160, 159, 137
+- **Key Insight:**  
+  These ads demonstrate **high efficiency** and **low acquisition costs**, but achieving consistent **100% conversion rates** across multiple ads is uncommon. This could reflect **niche targeting success** or **atypical data recording**. Further investigation into the campaign strategies behind these ads could uncover replicable best practices.
+
+**Bottom 10 Performing Ads Insights**
+- **Ad IDs:** 358, 371, 370, 369, 363, 362, 360, 359, 715, 786
+- **Common Traits:**
+  1. **High Ad Spend with No ROI:** Ads like **ID 715** spent **$63** without securing any approved conversions, suggesting budget inefficiencies.
+  2. **High Impressions, Low Engagement:** Some ads achieved over **200,000 impressions** with minimal clicks and zero conversions, pointing to irrelevant targeting or poor ad messaging.
+- **Key Insight:**  
+  The failure of these ads despite high impressions and spend suggests **misaligned targeting**, **ineffective creatives**, or **landing page issues**. There’s a clear opportunity to optimize budget allocation and campaign design.
+  
+---
+
+### **Conversion Rate by Interest**
+(insert graph)
+ - Intrests 31 (6.67%) and 36 (6.25%) show high conversion rates, potentially representing that these interests aligned closely with the product offering.
+ - Intrests 103 (1.5%) and 105 (1.32%) show low conversion rates, these require re evaluation due to poor audience-product fit.
 
 ---
 
-## **Key Observations**
+## **Segment Analysis**
+**Overview**
+Breaking down analysis by age, and gender allowing us to identify how demographics play a role.
 
-1. **High CPA in Campaign 1178:**  
-   - **CPA:** $64.05 (6.8x higher than Campaign 916's $9.36)  
-   - **Reason:** Low conversion rates (2.4%) despite high impressions. This indicates inefficient targeting or poor post-click experience.
+###**Conversion Rate by Age group**
+(insert graph)
 
-2. **Campaign 916 Efficiency:**  
-   - **Conversion Rate:** 14.1% (4.7x higher than Campaign 1178)  
-   - **CTR:** 2.5%, maintaining cost efficiency while driving strong conversions.
+**What we see:**
+**Top Performer:**  
+- The 30-34 age group has the highest conversion rate at 4.65%, suggesting this demographic is highly engaged and more likely to convert.  
 
-3. **Ad Creative Impact:**  
-   - Top ads achieved CTRs **3-5x higher** than bottom-performing ones, emphasizing the importance of ad copy and visuals.
+**Declining Trend:**
+- There’s a noticeable drop-off in conversion rates as age increases:
+35-39: 2.81%
+40-44: 2.09%
+45-49: 1.44%
 
-4. **Demographic Insights:**  
-   - No significant impact of **gender, age, or interests** on conversion rates (p > 0.05), suggesting behavioral targeting may outperform demographic segmentation.
+**Cost Efficiency:**
+- The Cost Per Acquisition (CPA) rises with age:  
+30-34: $\$$34.58 (most cost-effective)  
+45-49: $\$$104.27 (least cost-effective)
 
 ---
+
+###**Conversion Rate by Gender**
+![Bar graph of conversion rate by gender](/figures/conversion_rate_by_gender.png)
+
+
+**Conversion Rate:**  
+- Males (M): 3.75% conversion rate
+- Females (F): 1.94% conversion rate
+
+**Cost Per Acquisition (CPA):**  
+- Males: $45.15 (more cost-effective)  
+
+- Females: $74.19
+
+**CTR Difference:**
+- Females have a higher CTR (0.0208) compared to males (0.0145), but this doesn't translate into conversions.
+
+---
+
+###**Gender and Age Interaction**
+![Gender and age interaction Heatmap](/figures/conversion_rate_heatmap.png)
+
+
+**Highest Conversion Rate:**
+- Males aged 30-34: 6.00% conversion rate
+- Females aged 30-34: 3.49%
+
+**Consistent Pattern:**
+- Males outperform females in all age groups.
+- Both genders experience a decline in conversion rates with age.
+
+---
+
+## Campaign Performance Analysis**
+**Overview**
+Investigate differences in Campaign performance through key performance indicators.
+
+![Campagin Performance by Key Metrics](/figures/.png)
+(need to save in notebook)
+
+**What we see:**
+**Campaign 916 is the Top Performer:**
+- Highest Conversion Rate: 14.16%
+- Lowest CPA: $9.36
+- Despite having the lowest number of impressions, it’s the most cost-effective, converting clicks into approved conversions efficiently.
+
+**Campaign 936 - Moderate Performer:**
+- Conversion Rate: 5.95%
+- CPA: $24.52
+- Performance is decent, but there's room for optimization to improve cost efficiency.
+
+**Campaign 1178 - Underperforming:**
+- Conversion Rate: 2.41% (Lowest)
+- CPA: $64.05 (Highest)
+- Despite having over 204 million impressions, conversions are not scaling effectively. This suggests poor audience targeting, ad fatigue, or ineffective creatives.
+
+---
+
 
 ## **A/B Testing Results**
 
-### **Campaign Performance**
+### **Campaign Performance Efficiency (Cross-Campaign Analysis)**
+
+**Campaign Performance Efficiency (Cross-Campaign Analysis)**
+**Objective:**  
+Compare the cost efficiency and conversion performance of different campaigns using pairwise A/B tests.
+
+**Metrics:**
+- Conversion Rate (%) (Approved Conversions / Clicks)
+- CPA Rate per Impression (CPA normalized by the number of impressions)
+
+**Hypothesis:**
+- **Null Hypothesis (H0):**: No difference in conversion efficiency across campaigns.
+- **Alternative Hypothesis (H1):** : Campaign 916 performs significantly better in terms of CPA and conversions.
+
+**Method:**
+- T-Test (Independent Samples): Compare CPA between Campaign 916 and 1178 to assess statistical significance.
 
 | **Comparison**          | **Conversion Rate (p-value)** | **CPA per Impression (p-value)** | **Insight**                         |
 |-------------------------|-------------------------------|----------------------------------|------------------------------------|
 | **916 vs 1178**         | **0.0030** (Significant)      | 0.1410 (Not Significant)         | 916 outperforms in conversions     |
-| **916 vs 936**          | 0.4873 (Not Significant)      | 0.3733 (Not Significant)         | No significant difference          |
-| **936 vs 1178**         | **2.30 × 10⁻¹²** (Significant) | 0.0901 (Marginal)                | 936 significantly outperforms 1178 |
+| **916 vs 936**          | 0.4309 (Not Significant)      | 0.3669 (Not Significant)         | No significant difference          |
+| **936 vs 1178**         | **2.34 × 10⁻¹²** (Significant) | 0.09837 (Marginal)              | 936 significantly outperforms 1178 |
+
+###**What does this tell us?**
+**Campaign 916 vs. Campaign 1178**
+
+**Conversion Rate (CR):**
+- Interpretation: There is a statistically significant difference in conversion rates between the two campaigns. Campaign 916 likely performs better.  
+**CPA per Impression:**
+- Interpretation: No significant difference in CPA per impression. The cost efficiency per impression is statistically similar between the two campaigns.
+
+**Campaign 916 vs. Campaign 936**
+
+**Conversion Rate (CR):**
+- Interpretation: No significant difference in conversion rates between Campaign 916 and 936.
+**CPA per Impression:**
+- Interpretation: CPA per impression does not differ significantly between these campaigns.
+
+**Campaign 936 vs. Campaign 1178**
+
+**Conversion Rate (CR):**
+- Interpretation: A highly significant difference in conversion rates. Campaign 936 significantly outperforms Campaign 1178 in conversion rates.
+**CPA per Impression:**
+- Interpretation: While not below the typical 0.05 threshold, this marginally non-significant result suggests there may be some difference worth further exploration.
+
+###**What can we do?**
+- Investigate into why Campaign 1178 is failing to convert, potentially shift focus from this campagin.
+- Increase budget allocation to Campaign 916.
+- Improve Campaign 936 through more A/B testing.
+
+---
+
+### **Ad Creative Effectiveness (CTR-Focused Test)**
+
+**Objective:**
+To determine which ad creatives (**ad_id**) drive **higher Click-Through Rates (CTR)** and whether these clicks lead to meaningful **conversions**.
+
+**Metrics:**
+
+- **Primary Metric:**  
+  - **Click-Through Rate (CTR %):** Measures the effectiveness of ad creatives in generating clicks.  
+
+- **Secondary Metric:**  
+  - **Conversion Rate (%):** Ensures that clicks result in actual conversions, reflecting lead quality.
+
+**Hypothesis:**
+
+- **Null Hypothesis (H0):**  
+  - There is **no significant difference** in CTR and Conversion Rates between different ad creatives.
+
+- **Alternative Hypothesis (H1):**  
+  - Certain ad creatives (with specific headlines, images, or messaging) significantly improve CTR and Conversion Rates.
+
+
+**Methodology:**
+
+1. **Segmentation:**
+   - Ads were segmented into two groups based on **Cost Per Acquisition (CPA):**  
+     - **High CPA Ads:** Ads with higher acquisition costs.  
+     - **Low CPA Ads:** Ads with lower acquisition costs.
+
+2. **Statistical Test:**
+   - **Proportion Z-Test:** Used to compare **CTR** across High CPA and Low CPA ad groups.  
+   - Additionally, **Conversion Rates** were analyzed to assess the **quality of clicks**.
+  
+(insert table)
+
+###**What does this tell us?**
+**1. Click-Through Rate (CTR) comparison:**
+- Surprisingly, **Low CPA Ads have a higher CTR** than High CPA Ads.  
+- This suggests that ads with **lower acquisition costs** are actually **more effective in attracting clicks**, contradicting the common assumption that higher spend correlates with better click performance.
+
+**2. Conversion Rate Comparison:**
+- **None of the clicks from Low CPA Ads led to conversions**, while High CPA Ads managed a modest **2.12% conversion rate**.  
+- This indicates that although Low CPA Ads attract more clicks, **these clicks are low quality**, failing to convert into actual customers.
+
+**Statistical Significance:**
+- The **p-value is far below the 0.05 threshold**, indicating a **highly significant difference** in CTR between High and Low CPA Ads.  
+- The **negative Z-statistic** suggests that **High CPA Ads have significantly lower CTRs** compared to Low CPA Ads.
+
+###**What can we do?**
+**1. Clicks ≠ Conversions:**  
+   - **Low CPA Ads** generate **more clicks**, but they **fail to convert**.  
+   - **High CPA Ads**, despite fewer clicks, result in **higher conversion rates**.  
+   - This highlights the importance of focusing on **click quality** over quantity.
+
+**2. Reevaluate Low CPA Ads:**  
+   - Investigate the **ad content, targeting, and landing pages** of Low CPA Ads to understand **why conversions are zero**.  
+   - Consider **adjusting targeting** to attract higher-quality leads.
+
+**3. Optimize High CPA Ads:**  
+   - Since High CPA Ads convert better, explore ways to **reduce their CPA** without compromising conversion rates.  
+   - Test **minor adjustments** (e.g., ad copy, CTA placement) to improve CTR while maintaining conversion efficiency.
+
+**4. Focus on Conversion-Driven Metrics:**  
+   - Shift A/B testing focus from **just CTR** to a combination of **CTR + Conversion Rate + CPA** for a holistic performance view.
 
 ---
 
 ## **Chi-Square Analysis**
 
+### ***Chi-Square Test***
+**Objective:**  
+Evaluate if demographic features (gender, age, interests) are associated with conversion performance
+
+**Metrics:**
+- Conversion rate across different groups
+
+**Hypothesis:**
+- H0: No association between demographic segments and conversion rates
+- H1: Demographic factors significantly impact conversion performance
+
+**Method:**
+- Chi square test for independence to analyze:
+    - Gender vs conversion rates.
+    - Age Group vs conversion rates.
+    - Interest category vs conversion rates.
+
 | **Demographic Factor** | **Chi-Square Statistic** | **P-Value** | **Result**                     |
-|------------------------|--------------------------|-------------|--------------------------------|
-| **Gender vs Conversion**   | 15.49                    | 0.3453      | Not Significant               |
-| **Age vs Conversion**      | 29.80                    | 0.9211      | Not Significant               |
-| **Interest vs Conversion** | 530.66                   | 0.6731      | Not Significant               |
+|----------------------------|--------------------------|-------------|--------------------------------|
+| **Gender vs Conversion**   | 15.52                    | 0.3430      | Not Significant               |
+| **Age vs Conversion**      | 29.86                    | 0.9198      | Not Significant               |
+| **Interest vs Conversion** | 530.32                   | 0.6767      | Not Significant               |
+
+**What does this tell us?**
+**No Strong Demographic Associations:**
+- Gender, age, and interests do not show a statistically significant impact on conversion rates.
+- Variations observed in earlier analyses may be due to random fluctuations rather than true demographic effects.
+
+**What can we do?**
+**Focus on Campaign & Ad Optimization:**
+- Since demographics aren't strong predictors, efforts should focus on ad creatives, campaign strategies, and targeting optimizations.
 
 ---
 
@@ -155,22 +420,45 @@ This report evaluates the performance of digital marketing campaigns using a dat
 4. **Behavioral Targeting Over Demographics:**  
    - Demographic factors had no significant impact on conversions.  
    - Shift focus to **user behaviors, interests, and retargeting** strategies.
+  
+5. **Landing Page Optimization:**
+- Improve Post-Click Experience through testing different landing page layouts, CTAs, and content to reduce the click-to-conversion gap.
+- Ensure fast load times and mobile-friendly designs to prevent drop-offs.
+
+6 . **Advanced Analytical Approaches:**
+- Develop predictive models to forecast conversion likelihood based on ad characteristics and audience behaviors.
 
 ---
 
-## **Future Testing Opportunities**
+## **Future Testing:**
 
-1. **Multivariate Testing:**  
-   - Test combinations of headlines, images, CTAs to find the best-performing mix.
-
-2. **Landing Page Optimization Tests:**  
-   - Analyze whether specific landing pages correlate with conversion drops.
-
-3. **Engagement Funnel Testing:**  
-   - Evaluate post-click behavior to identify drop-off points and optimize accordingly.
-
-4. **Day-Parting Analysis:**  
-   - Identify if ad performance varies by time of day or day of the week.
+### 1. **A/B Tests for Creative Elements:**
+- **Objective:** Identify which specific creative elements (headlines, images, CTAs) have the highest impact on CTR and conversion rates.
+- **Outline:**
+  - Test ads with identical content but varying one creative element at a time.
+  - Measure changes in CTR and conversion rates.
+- **Expected Insights:** Determine which creative elements resonate most with the target audience.
+---
+### 2. **Chi-Square Tests for Behavioral Segmentation:**
+- **Objective:** Evaluate if user behaviors (click frequency, session duration) are significantly associated with conversion rates.
+- **Outline:**
+  - Segment users by behavioral patterns.
+  - Apply chi-square tests to detect significant relationships.
+- **Expected Insights:** Identify key behavioral drivers of conversions to refine targeting strategies.
+---
+### 3. **Time-Based Performance Analysis:**
+- **Objective:** Assess if ad performance varies significantly across different times of day or days of the week.
+- **Outline:**
+  - Conduct A/B tests for ads shown at different time slots.
+  - Compare engagement and conversion metrics.
+- **Expected Insights:** Optimize ad scheduling to maximize engagement and conversions.
+---
+### 4. **Multi-Variant Testing:**
+- **Objective:** Test multiple variables simultaneously to understand interaction effects between targeting, creatives, and placement.
+- **Outline:**
+  - Create multiple ad versions with varied targeting criteria and creatives.
+  - Analyze performance differences using ANOVA.
+- **Expected Insights:** Identify optimal combinations of targeting strategies and creative elements.
 
 ---
 
