@@ -562,7 +562,7 @@ The analysis reveals that **ad creatives and campaign strategies** drive perform
 ## 📚 **Further Reading**
 
 To follow along my workflow, including all code refer to the final notebook.:  
-**[Full Notebook - including code](/notebooks/Final_Notebook.ipynb)**
-For a summarized version of the full report, refer to the summary report:
+**[Full Notebook - including code](/notebooks/Final_Notebook.ipynb)**  
+For a summarized version of the full report, refer to the summary report:  
 **[Summary Report - Marketing Campaign Analysis](/Summary_Report.md)**  
 
