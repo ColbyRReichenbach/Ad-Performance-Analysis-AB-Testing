@@ -1,11 +1,8 @@
-# Correct the Markdown anchors for internal linking
-
-corrected_report_content = """
-# 📊 **Marketing Campaign Performance Analysis Report**
-
+# **Marketing Campaign Performance Analysis Report**
+**Colby Reichenbach**
 ---
 
-## 📋 **Table of Contents**
+## **Table of Contents**
 
 1. [Executive Summary](#executive-summary)
 2. [Introduction](#introduction)
@@ -27,18 +24,32 @@ corrected_report_content = """
 
 ## **Executive Summary**
 
-This report presents an in-depth analysis of the company's marketing campaigns, uncovering critical insights into **conversion performance, ad creative effectiveness, and demographic impacts**. Our findings guide actionable strategies to optimize campaign efficiency, reduce costs, and enhance ROI.
+This report provides a comprehensive analysis of the company's marketing campaign performance, focusing on key metrics such as Click-Through Rate (CTR), Conversion Rate, Cost Per Acquisition (CPA), and overall ad effectiveness. Key insights from A/B testing, Chi-Square analysis, and funnel analysis have been synthesized to deliver actionable recommendations aimed at optimizing marketing strategies and enhancing ROI.
 
 ---
+### **Key Findings:**
+
+- Campaign 916 outperforms others with a conversion rate of 14.16% and the lowest CPA of $9.36, indicating efficient budget utilization and strong audience targeting.
+
+- Campaign 1178 has the highest CPA ($64.05) with a conversion rate of only 2.41%, highlighting ineffective targeting and ad creative issues.
+
+- Chi-Square tests reveal no significant demographic impact on conversion rates, suggesting a need to pivot toward behavioral targeting to capture higher-quality leads.
+
+- Funnel analysis highlights major drop-offs between impressions and clicks, underscoring engagement issues that can be addressed with optimized creatives and targeting strategies.
+
+### **Strategic Recommendations:**
+
+- Shift from demographic to behavioral targeting, leveraging user engagement data.
+
+- Reallocate budget from underperforming campaigns to high-ROI campaigns like Campaign 916.
+
+- Optimize ad creatives through targeted A/B testing to improve CTR and conversion rates.
+
+- Enhance landing pages to bridge the click-to-conversion gap, improving overall efficiency.
 
 ## **Introduction**
 
-The goal of this analysis is to evaluate the performance of marketing campaigns to identify high-impact strategies. We focus on:
-
-- **Conversion Rates**
-- **Cost Per Acquisition (CPA)**
-- **Click-Through Rates (CTR)**
-- **Demographic Impact**
+This report evaluates the performance of digital marketing campaigns using a data-driven approach. The objective is to identify strengths, weaknesses, and opportunities within current marketing efforts and provide actionable recommendations.
 
 ---
 
