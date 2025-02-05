@@ -108,7 +108,7 @@ Shift focus from demographic segmentation to behavioral targeting strategies for
 ## 📚 **Further Reading**
 
 For detailed analysis, statistical outputs, and additional insights, refer to the full report:  
-**[Full Report - Marketing Campaign Analysis](/report.md)**
+**[Full Report - Marketing Campaign Analysis](/report.md)**  
 **[Full Notebook - including code](/notebooks/Final_Notebook.ipynb)**
 
 ---
