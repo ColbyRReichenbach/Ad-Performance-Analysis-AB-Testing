@@ -193,6 +193,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 ###**Campaign Funnel Comparison**
 
 ![Comaprison Funnel](/figures/funnel_comparison.png)
+
 **Campaign 916 (Top Performer)**
 
 - **Conversion Rate:** **0.00357%** (*8x higher than Campaign 1178*)  
