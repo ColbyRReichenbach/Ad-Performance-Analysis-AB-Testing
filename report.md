@@ -566,3 +566,8 @@ To follow along my workflow, including all code refer to the final notebook.:
 For a summarized version of the full report, refer to the summary report:  
 **[Summary Report - Marketing Campaign Analysis](/Summary_Report.md)**  
 
+---
+
+Prepared By: [Colby Reichenbach]
+Date: [01-01-2025]
+
