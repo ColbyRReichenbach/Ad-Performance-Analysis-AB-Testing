@@ -255,7 +255,7 @@ Convresion rate was analyzed per ad, and interest category to identify our most 
 Breaking down analysis by age, and gender allowing us to identify how demographics play a role.
 
 ### **Conversion Rate by Age group**
-(insert graph)
+![Bar graph of conversion rate by gender](/figures/conversion_rate_by_age_group.png)
 
 **What we see:**
 **Top Performer:**  
@@ -311,7 +311,6 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 Investigate differences in Campaign performance through key performance indicators.
 
 ![Campagin Performance by Key Metrics](/figures/campaign_performance_metrics.png)
-(need to save in notebook)
 
 **What we see:**
 **Campaign 916 is the Top Performer:**
