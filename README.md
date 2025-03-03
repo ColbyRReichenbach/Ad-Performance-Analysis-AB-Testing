@@ -1,4 +1,4 @@
-# 📊 A/B Testing Ads Analysis
+# A/B Testing Ads Analysis
 
 This repository contains a comprehensive data analysis project focused on A/B testing for social media ad campaigns. The goal is to provide actionable insights into ad performance, campaign effectiveness, and strategic marketing optimizations.
 
@@ -11,7 +11,7 @@ This project analyzes ad campaign data from a ficticious Company to identify key
 - **Marketing Funnel Analysis:** Identifying bottlenecks in the customer journey.
 - **Key Insights & Recommendations:** Data-driven strategies for growth.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```bash
 ├── notebooks/
