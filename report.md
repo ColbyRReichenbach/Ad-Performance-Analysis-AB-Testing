@@ -243,7 +243,7 @@ Convresion rate was analyzed per ad, and interest category to identify our most 
 ---
 
 ### **Conversion Rate by Interest**
-(insert graph)
+![Bar graph of conversion rate by intrests](/figures/top_intrests.png)
  - Intrests 31 (6.67%) and 36 (6.25%) show high conversion rates, potentially representing that these interests aligned closely with the product offering.
  - Intrests 103 (1.5%) and 105 (1.32%) show low conversion rates, these require re evaluation due to poor audience-product fit.
 
@@ -556,15 +556,6 @@ Evaluate if demographic features (gender, age, interests) are associated with co
 ## **Conclusion**
 
 The analysis reveals that **ad creatives and campaign strategies** drive performance more than demographics. **Campaign 916** emerges as a top performer, while **Campaign 1178** needs targeted optimizations. Moving forward, a hybrid approach combining effective elements from different campaigns will maximize ROI.
-
----
-
-## 📚 **Further Reading**
-
-To follow along my workflow, including all code refer to the final notebook.:  
-**[Full Notebook - including code](/notebooks/Final_Notebook.ipynb)**  
-For a summarized version of the full report, refer to the summary report:  
-**[Summary Report - Marketing Campaign Analysis](/Summary_Report.md)**  
 
 ---
 
