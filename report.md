@@ -8,8 +8,8 @@
 3. [Methodology](#methodology)
 4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
    - [Data Overview](#data-overview)
-   - [Descriptive Statistics](#descriptive-statistics)
    - [Funnel Analysis](#funnel-analysis)
+   - [Correlation Analysis](#correlation-analysis)
    - [Segment Analysis](#segment-analysis)
    - [Campaign Performance Analysis](#campaign-performance-analysis)
 5. [A/B Testing Results](#ab-testing-results)
@@ -99,22 +99,6 @@ The data used in this report comes from a marketing campaign dataset tracking im
 - **Cost Per Thousand Impressions (CPM):** Calculates the cost to reach 1,000 potential customers. This metric is valuable for understanding the cost-efficiency of campaigns focused on brand awareness.
 
 ---
-## **Exploratory Data Analysis (EDA)
-
-EDA helps us understand the structure of the data, identify patterns, and detect anomalies. We analyze key metrics such as:
-- **Impressions, Clicks, Spend, Conversions**
-- **Descriptive Statistics** for campaign performance
-- **Correlation Analysis** to find relationships between variables
-- **Segment Analysis**
-- **Funnel Analysis** to visualize the conversion process
-
-This section lays the groundwork for hypothesis testing and strategic insights.
-
----
-
-## **Descriptive Statistics**
-### **Distribution of key Metrics**
-(insert table)
 
 ### **Correlation Analysis**
 
