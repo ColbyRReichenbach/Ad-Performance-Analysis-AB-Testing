@@ -11,7 +11,7 @@
    - [Funnel Analysis](#funnel-analysis)
    - [Correlation Analysis](#correlation-analysis)
    - [Segment Analysis](#segment-analysis)
-   - [Conversion Rate Analysis](#conversion-rate_analysis)
+   - [Conversion Rate Analysis](#Conversion-Rate-Analysis)
    - [Campaign Performance Analysis](#campaign-performance-analysis)
 5. [A/B Testing Results](#ab-testing-results)
    - [Campaign Performance Efficiency (Cross-Campaign Analysis)](#Campaign-Performance-Efficiency-(Cross-Campaign-Analysis))
