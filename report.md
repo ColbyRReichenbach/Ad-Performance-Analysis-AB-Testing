@@ -103,7 +103,7 @@ The data used in this report comes from a marketing campaign dataset tracking im
 
 ### **Correlation Analysis**
 
-![Correlation Heatmap](/figures/correlation_matrix_of_metrics.png)
+![Correlation Heatmap](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/correlation_matrix_of_metrics.png)
 
 - **Clicks & Spend (0.99):**  
   - Spending more directly correlates with generating more clicks. This indicates that *budget allocation* heavily influences click volume. - **Impressions and Conversions:** Weak correlation (r ≈ 0.3), suggesting impressions alone aren’t enough for conversions.
@@ -133,7 +133,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 
 --- 
 ### **Combined Funnel between all Campaigns**
-![Overall Funnel](/figures/combined_marketing_funnel.png)
+![Overall Funnel](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/combined_marketing_funnel.png)
 
 **Impressions → Clicks**
 - **Drop-off Rate:** **99.98%** (Conversion Rate: ~0.018%)
@@ -176,7 +176,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 
 ### **Campaign Funnel Comparison**
 
-![Comaprison Funnel](/figures/funnel_comparison.png)
+![Comaprison Funnel](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/funnel_comparison.png)
 
 **Campaign 916 (Top Performer)**
 
@@ -228,7 +228,7 @@ Convresion rate was analyzed per ad, and interest category to identify our most 
 ---
 
 ### **Conversion Rate by Interest**
-![Bar graph of conversion rate by intrests](/figures/top_intrests.png)
+![Bar graph of conversion rate by intrests](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/top_intrests.png)
  - Intrests 31 (6.67%) and 36 (6.25%) show high conversion rates, potentially representing that these interests aligned closely with the product offering.
  - Intrests 103 (1.5%) and 105 (1.32%) show low conversion rates, these require re evaluation due to poor audience-product fit.
 
@@ -239,7 +239,7 @@ Convresion rate was analyzed per ad, and interest category to identify our most 
 Breaking down analysis by age, and gender allowing us to identify how demographics play a role.
 
 ### **Conversion Rate by Age group**
-![Bar graph of conversion rate by gender](/figures/conversion_rate_by_age_group.png)
+![Bar graph of conversion rate by gender](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/conversion_rate_by_age_group.png)
 
 **What we see:**
 **Top Performer:**  
@@ -259,7 +259,7 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 ---
 
 ### **Conversion Rate by Gender**
-![Bar graph of conversion rate by gender](/figures/conversion_rate_by_gender.png)
+![Bar graph of conversion rate by gender](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/conversion_rate_by_gender.png)
 
 
 **Conversion Rate:**  
@@ -277,7 +277,7 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 ---
 
 ### **Gender and Age Interaction**
-![Gender and age interaction Heatmap](/figures/conversion_rate_heatmap.png)
+![Gender and age interaction Heatmap](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/conversion_rate_heatmap.png)
 
 
 **Highest Conversion Rate:**
@@ -294,7 +294,7 @@ Breaking down analysis by age, and gender allowing us to identify how demographi
 **Overview**
 Investigate differences in Campaign performance through key performance indicators.
 
-![Campagin Performance by Key Metrics](/figures/campaign_performance_metrics.png)
+![Campagin Performance by Key Metrics](https://raw.githubusercontent.com/ColbyRReichenbach/Ad-Performance-Analysis-AB-Testing/refs/heads/main/figures/campaign_performance_metrics.png)
 
 **What we see:**
 **Campaign 916 is the Top Performer:**
