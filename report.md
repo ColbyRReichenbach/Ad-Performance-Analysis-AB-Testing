@@ -173,7 +173,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 
 ---
 
-###**Campaign Funnel Comparison**
+### **Campaign Funnel Comparison**
 
 ![Comaprison Funnel](/figures/funnel_comparison.png)
 
