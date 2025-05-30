@@ -207,7 +207,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 
 ---
 
-### **Conversion Rate Analysis**
+## **Conversion Rate Analysis**
 **Overview**
 Convresion rate was analyzed per ad, and interest category to identify our most efficient areas.
 
