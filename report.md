@@ -147,7 +147,7 @@ The funnel plots use a logarithmic (log10) scale to represent the data. This tra
 - **Reveals Trends Clearly:** Log scaling helps visualize drop-off patterns across all funnel stages more effectively.
 
 --- 
-###**Combined Funnel between all Campaigns**
+### **Combined Funnel between all Campaigns**
 ![Overall Funnel](/figures/combined_marketing_funnel.png)
 
 **Impressions → Clicks**
