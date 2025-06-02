@@ -1,8 +1,8 @@
 **Summary Report: Marketing Campaign Performance Analysis**
 
-**Date:** 01-01-2025
-**Prepared For:** Stakeholders
-**Based On:** Marketing Campaign Performance Analysis Report by Colby Reichenbach
+**Date:** 01-01-2025  
+**Prepared For:** Stakeholders  
+**Based On:** Marketing Campaign Performance Analysis Report by Colby Reichenbach  
 
 ---
 
