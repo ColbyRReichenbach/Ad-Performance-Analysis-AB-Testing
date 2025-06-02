@@ -1,5 +1,3 @@
----
-
 **Summary Report: Marketing Campaign Performance Analysis**
 
 **Date:** 01-01-2025
