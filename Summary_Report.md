@@ -6,10 +6,10 @@
 
 ---
 
-**1. Introduction & Objectives**
+### **1. Introduction & Objectives**
 This summary encapsulates the key findings, conclusions, and strategic recommendations from the comprehensive analysis of marketing campaign performance. The primary objectives of the full analysis were to assess campaign effectiveness, identify drivers of user engagement and conversion, evaluate the impact of ad creatives and demographic factors, and provide data-driven recommendations for marketing optimization and improved ROI.
 
-**2. Key Findings & Conclusions**
+### **2. Key Findings & Conclusions**
 
 * **Significant Performance Disparities Across Campaigns:**
     * **Campaign 916** is the top performer, demonstrating high efficiency with a 14.16% conversion rate and the lowest Cost Per Acquisition (CPA) at $9.36.
@@ -31,7 +31,7 @@ This summary encapsulates the key findings, conclusions, and strategic recommend
 * **Primary Performance Drivers:**
     The analysis consistently points to **ad creatives, campaign-specific strategies (including targeting refinement), and the post-click user experience (landing pages)** as more influential drivers of marketing success than broad demographic segmentation.
 
-**3. Key Strategic Recommendations**
+### **3. Key Strategic Recommendations**
 
 To enhance marketing ROI and overall campaign effectiveness, the following core strategies are recommended:
 
@@ -52,7 +52,7 @@ To enhance marketing ROI and overall campaign effectiveness, the following core 
 5.  **Focus on Conversion-Driven Metrics:**
     * Shift A/B testing and campaign evaluation focus from solely CTR to a more holistic view incorporating **Conversion Rate, CPA, and lead quality.**
 
-**4. Outlook**
+### **4. Outlook**
 By implementing these data-driven recommendations, the organization can expect to see tangible improvements in campaign efficiency, lead quality, and ultimately, a greater return on marketing investment. A continued focus on agile testing, behavioral insights, and optimization will be key to sustained success.
 
 ---
