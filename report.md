@@ -23,7 +23,6 @@
 8.  [Strategic Recommendations](#strategic-recommendations)
 9.  [Future Testing Opportunities](#future-testing-opportunities)
 10. [Conclusion](#conclusion)
-11. [Appendix](#appendix)
 
 ---
 
